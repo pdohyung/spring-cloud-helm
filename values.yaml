@@ -9,8 +9,8 @@ clubDeployment:
   replicas: 1
 clubService:
   ports:
-  - port: 8092
-    targetPort: 8092
+    - port: 8092
+      targetPort: 8092
   type: ClusterIP
 eurekaDeployment:
   gigboardEureka:
@@ -23,8 +23,8 @@ eurekaDeployment:
   replicas: 1
 eurekaService:
   ports:
-  - port: 8761
-    targetPort: 8761
+    - port: 8761
+      targetPort: 8761
   type: ClusterIP
 gatewayDeployment:
   gigboardGateway:
@@ -37,8 +37,8 @@ gatewayDeployment:
   replicas: 1
 gatewayService:
   ports:
-  - port: 8090
-    targetPort: 8090
+    - port: 8090
+      targetPort: 8090
   type: ClusterIP
 kubernetesClusterDomain: cluster.local
 placeDeployment:
@@ -52,8 +52,8 @@ placeDeployment:
   replicas: 1
 placeService:
   ports:
-  - port: 8093
-    targetPort: 8093
+    - port: 8093
+      targetPort: 8093
   type: ClusterIP
 recruitDeployment:
   gigboardRecruit:
@@ -66,8 +66,8 @@ recruitDeployment:
   replicas: 1
 recruitService:
   ports:
-  - port: 8094
-    targetPort: 8094
+    - port: 8094
+      targetPort: 8094
   type: ClusterIP
 userDeployment:
   gigboardUser:
@@ -80,6 +80,10 @@ userDeployment:
   replicas: 1
 userService:
   ports:
-  - port: 8091
-    targetPort: 8091
+    - port: 8091
+      targetPort: 8091
   type: ClusterIP
+deployment:
+  user:
+    image:
+      tag: '1'
