@@ -4,7 +4,7 @@ clubDeployment:
       springProfilesActive: prod
     image:
       repository: heyh0/gigboard-club
-      tag: latest
+      tag: '1'
     imagePullPolicy: Always
   replicas: 1
 clubService:
