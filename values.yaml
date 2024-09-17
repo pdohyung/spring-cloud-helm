@@ -32,7 +32,7 @@ gatewayDeployment:
       springProfilesActive: prod
     image:
       repository: heyh0/gigboard-gateway
-      tag: '3'
+      tag: '4'
     imagePullPolicy: Always
   replicas: 1
 gatewayService:
